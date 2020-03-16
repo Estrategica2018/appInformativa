@@ -40,7 +40,7 @@ $('#btnIngresar').on('click', function () {
 						<div class="card-header">Video Informativo</div>
 						<div class="card-content">
 						<div class="card-content-inner">
-						<iframe width="auto" height="auto" src="video/CovidPiloto.mp4">
+						<iframe width="auto" height="auto" src="https://estrategicacomunicaciones.com/mobile/vid/CovidPiloto.mp4">
 						</iframe>
 						</div>
 						</div>

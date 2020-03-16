@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ac516db-63fc-4fb7-b7fe-68ff9ef7cab1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/www/video/CovidPiloto.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/browser/www/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/login.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584383693299</updated>
       <workItem from="1584383696294" duration="782000" />
-      <workItem from="1584388076857" duration="9621000" />
+      <workItem from="1584388076857" duration="10067000" />
     </task>
     <servers />
   </component>
