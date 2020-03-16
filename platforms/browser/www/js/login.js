@@ -34,7 +34,7 @@ $('#tb4').on('click',function(){
 
 $('#btnIngresar').on('click', function () {
 	if ($('#txtUsuario').val() != '' && $('#txtContrasena').val() != '') {
-		$.post('http://www.estrategicacomunicaciones.com/mobile/appInformativa/consultar.usuario.php', {
+		$.post('https://www.estrategicacomunicaciones.com/mobile/appInformativa/consultar.usuario.php', {
 			'correo' : $('#txtUsuario').val(),
 			'contrasena' : $('#txtContrasena').val(),
 			'empresa': $('#company').val(),
