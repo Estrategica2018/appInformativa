@@ -34,15 +34,59 @@ $('#tb4').on('click',function(){
 
 $('#btnIngresar').on('click', function () {
 	if ($('#txtUsuario').val() != '' && $('#txtContrasena').val() != '') {
-		myApp.alert('response.message', 'Estrategica');
-		try {
-			myApp.alert('ingresa.message', 'Estrategica');
 
-		} catch(err) {
-
-			myApp.alert(err, 'Estrategica');
-
+		if( $('#txtUsuario').val() === "diegodigital@gmail.com" && $('#txtContrasena').val() === "diegodigital"){
+			$('#listTips').append(`<li class="card">
+						<div class="card-header">Video Informativo</div>
+						<div class="card-content">
+						<div class="card-content-inner">
+						<iframe width="auto" height="auto" src="video/CovidPiloto.mp4">
+						</iframe>
+						</div>
+						</div>
+						</li>`);
+			$("#loginForm").attr("hidden",true);
+			$('#contentForm').attr('hidden',false);
+			setCookie('id_usuario', 1);
+		}else{
+			myApp.alert('Usuario y/o contraseña invalidos', 'Colsubsidio');
 		}
+		/*
+		$.post('https://www.estrategicacomunicaciones.com/mobile/appInformativa/consultar.usuario.php', {
+			'correo' : $('#txtUsuario').val(),
+			'contrasena' : $('#txtContrasena').val(),
+			'empresa': $('#company').val(),
+		}, function(response) {
+			if (response.state == 'true') {
+				console.log(response);
+				console.log(response.result);
+				$content = "";
+				myApp.alert('jkxncjkzxbc', 'Estrategica');
+				response.contenidoVideo.forEach(function(element, i) {
+					console.log('Element', i, 'is', element);
+					$content = $content+`<li class="card">
+								<div class="card-header">Card Header</div>
+									<div class="card-content">
+										<div class="card-content-inner">
+											<iframe width="auto" height="auto" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+											</iframe>
+										</div>
+									</div>
+							</li>`
+				});
+				myApp.alert('asndkjabsdjkab x222', 'Estrategica');
+				$('#listTips').append($content);
+				$("#loginForm").attr("hidden",true);
+				$('#contentForm').attr('hidden',false);
+				setCookie('id_usuario', response.result[0].id_usuario);
+				console.log(getCookie('id_usuario'),'alksdjasld');
+				//cargarProspectos(getCookie('id_usuario'));
+			} else {
+				//myApp.alert(response.message, 'Estrategica');
+				myApp.alert(response.message, 'Estrategica');
+			}
+		}, 'json');
+*/
 
 
 	} else {
