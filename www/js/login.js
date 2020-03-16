@@ -36,39 +36,7 @@ $('#btnIngresar').on('click', function () {
 	if ($('#txtUsuario').val() != '' && $('#txtContrasena').val() != '') {
 		myApp.alert('response.message', 'Estrategica');
 		try {
-			$.post('https://www.estrategicacomunicaciones.com/mobile/appInformativa/consultar.usuario.php', {
-				'correo' : $('#txtUsuario').val(),
-				'contrasena' : $('#txtContrasena').val(),
-				'empresa': $('#company').val(),
-			}, function(response) {
-				if (response.state == 'true') {
-					console.log(response);
-					console.log(response.result);
-					$content = "";
-					response.contenidoVideo.forEach(function(element, i) {
-						console.log('Element', i, 'is', element);
-						$content = $content+`<li class="card">
-								<div class="card-header">Card Header</div>
-									<div class="card-content">
-										<div class="card-content-inner">
-											<iframe width="auto" height="auto" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-											</iframe>
-										</div>
-									</div>
-							</li>`
-					});
-
-					$('#listTips').append($content);
-					$("#loginForm").attr("hidden",true);
-					$('#contentForm').attr('hidden',false);
-					setCookie('id_usuario', response.result[0].id_usuario);
-					console.log(getCookie('id_usuario'),'alksdjasld');
-					//cargarProspectos(getCookie('id_usuario'));
-				} else {
-					//myApp.alert(response.message, 'Estrategica');
-					myApp.alert(response.message, 'Estrategica');
-				}
-			}, 'json');
+			myApp.alert('ingresa.message', 'Estrategica');
 
 		} catch(err) {
 
