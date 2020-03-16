@@ -1,6 +1,7 @@
 $('.view').removeClass('active');
 myApp.showTab('#view-5');
 console.log(getCookie('id_usuario'),'alksdjasld');
+/*
 if (getCookie('id_usuario') !== '') {
 	$.post('http://www.estrategicacomunicaciones.com/mobile/php/consult.user.php', {
 		'id_usuario' : getCookie('id_usuario')
@@ -17,7 +18,7 @@ if (getCookie('id_usuario') !== '') {
 	$('#listTips').append('');
 	$("#loginForm").attr("hidden",false);
 	$('#contentForm').attr('hidden',true);
-}
+}*/
 
 var swiper1 = new myApp.swiper('.swiper-1', {
 	pagination:'.swiper-pagination-1',

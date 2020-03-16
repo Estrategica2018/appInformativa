@@ -1,177 +1,177 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>Estrat&eacute;gica</title>
-    <!-- Path to Framework7 Library CSS-->
-    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>Estrat&eacute;gica</title>
+	<!-- Path to Framework7 Library CSS-->
+	<link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
 	<link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
-    <!-- Path to your custom app styles-->
+	<!-- Path to your custom app styles-->
 	<link rel="stylesheet" href="lib/framework7/css/framework7.icons.css">
 	<link rel="stylesheet" href="lib/material/css/material-icons.css">
-    <link rel="stylesheet" href="css/my-app.css">
+	<link rel="stylesheet" href="css/my-app.css">
 	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/home.css">
-  </head>
-  <body>
-    <!-- Status bar overlay for fullscreen mode-->
-    <div class="statusbar-overlay"></div>
-    <!-- Panels overlay-->
-    <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
-      <div class="content-block">
-        <p>Left panel content goes here</p>
-      </div>
-    </div>
-    <!-- Right panel with cover effect-->
-    <div class="panel panel-right panel-cover">
-      <div class="content-block">
-        <p>Right panel content goes here</p>
-      </div>
-    </div>
-    <!-- Views, and they are tabs-->
-    <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
-    <div id ="loginForm" class="views tabs toolbar-through ">
-      <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+</head>
+<body>
+<!-- Status bar overlay for fullscreen mode-->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<!-- Left panel with reveal effect-->
+<div class="panel panel-left panel-reveal">
+	<div class="content-block">
+		<p>Left panel content goes here</p>
+	</div>
+</div>
+<!-- Right panel with cover effect-->
+<div class="panel panel-right panel-cover">
+	<div class="content-block">
+		<p>Right panel content goes here</p>
+	</div>
+</div>
+<!-- Views, and they are tabs-->
+<!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+<div id ="loginForm" class="views tabs toolbar-through ">
+	<!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="center sliding">
+				<img src="img/logo.png" width="150px">
+			</div>
+		</div>
+	</div>
+	<div class="pages navbar-through">
+		<div data-page="usuario" class="page">
+			<div class="page-content">
+				<div class="divLogin list-block">
+					<div class="login-screen-title">Iniciar sesi&oacute;n2</div>
+					<!-- Login form -->
+					<form>
+						<div class="row content-block">
+							<input  type="hidden" name="company" id="company"  value="1">
+							<div class="item-inner">
+								<div class="item-input">
+									<input type="email" name="username" placeholder="Usuario" id="txtUsuario">
+								</div>
+							</div>
+							<br><br>
+							<div class="item-inner">
+								<div class="item-input">
+									<input type="password" name="password" placeholder="Contrase&ntilde;a" id="txtContrasena">
+								</div>
+							</div>
+						</div>
+						<div class="row content-block">
+							<div class="col-100">
+								<p><a href="#" class="button button-big button-fill" id="btnIngresar">Ingresar</a></p>
+							</div>
+							<br>
+							<div class="col-100">
+								<p><a href="forget.password.html" class="button button-big">Olvidaste contrase&ntilde;a</a></p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="contentForm" class="views" >
+	<div class="view view-main">
+		<div class="pages navbar-through">
+			<!-- Pag has additional "with-subnavbar" class -->
+			<div data-page="home" class="page with-subnavbar">
+				<div class="page-content hide-bars-on-scroll">
+					<div class="tabs">
+						<div id="tab1" class="tab active">
+
+							<div class="list-block cards-list">
+								<ul id="listTips">
+								</ul>
+							</div>
+
+						</div>
+						<div id="tab2" class="tab">
+							<div class="content-block">
+								<p>Donec iaculis ...</p>
+								<p>Curabitur egestas, mi ...</p>
+								<p>Donec iaculis posuere ...</p>
+								<p>Donec iaculis ...</p>
+								<p>Curabitur egestas, mi ...</p>
+								<p>Donec iaculis posuere ...</p>
+								<p>Donec iaculis ...</p>
+								<p>Curabitur egestas, mi ...</p>
+								<p>Donec iaculis posuere ...</p>v
+								<p>Donec iaculis ...</p>
+								<p>Curabitur egestas, mi ...</p>
+								<p>Donec iaculis posuere ...</p>
+
+
+							</div>
+						</div>
+						<div id="tab3" class="tab">
+							<div class="content-block">
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="navbar">
 			<div class="navbar-inner">
+				<div class="left"></div>
 				<div class="center sliding">
 					<img src="img/logo.png" width="150px">
 				</div>
-			</div>
-		</div>
-		<div class="pages navbar-through">
-			<div data-page="usuario" class="page">
-				<div class="page-content">
-					<div class="divLogin list-block">
-						<div class="login-screen-title">Iniciar sesi&oacute;n</div>
-						<!-- Login form -->
-						<form>
-							<div class="row content-block">
-								<input  type="hidden" name="company" id="company"  value="1">
-								<div class="item-inner">
-									<div class="item-input">
-										<input type="email" name="username" placeholder="Usuario" id="txtUsuario">
-									</div>
-								</div>
-								<br><br>
-								<div class="item-inner">
-									<div class="item-input">
-										<input type="password" name="password" placeholder="Contrase&ntilde;a" id="txtContrasena">
-									</div>
-								</div>
-							</div>
-							<div class="row content-block">
-								<div class="col-100">
-									<p><a href="#" class="button button-big button-fill" id="btnIngresar">Ingresar</a></p>
-								</div>
-								<br>
-								<div class="col-100">
-									<p><a href="forget.password.html" class="button button-big">Olvidaste contrase&ntilde;a</a></p>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-    </div>
-	<div id="contentForm" class="views" >
-		<div class="view view-main">
-			<div class="pages navbar-through">
-				<!-- Pag has additional "with-subnavbar" class -->
-				<div data-page="home" class="page with-subnavbar">
-					<div class="page-content hide-bars-on-scroll">
-						<div class="tabs">
-							<div id="tab1" class="tab active">
-
-									<div class="list-block cards-list">
-										<ul id="listTips">
-										</ul>
-									</div>
-
-							</div>
-							<div id="tab2" class="tab">
-								<div class="content-block">
-									<p>Donec iaculis ...</p>
-									<p>Curabitur egestas, mi ...</p>
-									<p>Donec iaculis posuere ...</p>
-									<p>Donec iaculis ...</p>
-									<p>Curabitur egestas, mi ...</p>
-									<p>Donec iaculis posuere ...</p>
-									<p>Donec iaculis ...</p>
-									<p>Curabitur egestas, mi ...</p>
-									<p>Donec iaculis posuere ...</p>v
-									<p>Donec iaculis ...</p>
-									<p>Curabitur egestas, mi ...</p>
-									<p>Donec iaculis posuere ...</p>
-
-
-								</div>
-							</div>
-							<div id="tab3" class="tab">
-								<div class="content-block">
-									<p>Etiam non interdum erat...</p>
-									<p>Duis ac semper risus. Suspendisse...</p>
-									<p>Etiam non interdum erat...</p>
-									<p>Duis ac semper risus. Suspendisse...</p>
-									<p>Etiam non interdum erat...</p>
-									<p>Duis ac semper risus. Suspendisse...</p>
-									<p>Etiam non interdum erat...</p>
-									<p>Duis ac semper risus. Suspendisse...</p>
-									<p>Etiam non interdum erat...</p>
-									<p>Duis ac semper risus. Suspendisse...</p>
-									<p>Etiam non interdum erat...</p>
-									<p>Duis ac semper risus. Suspendisse...</p>
-									<p>Etiam non interdum erat...</p>
-									<p>Duis ac semper risus. Suspendisse...</p>
-									<p>Etiam non interdum erat...</p>
-									<p>Duis ac semper risus. Suspendisse...</p>
-									<p>Etiam non interdum erat...</p>
-									<p>Duis ac semper risus. Suspendisse...</p>
-									<p>Etiam non interdum erat...</p>
-									<p>Duis ac semper risus. Suspendisse...</p>
-
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="navbar">
-				<div class="navbar-inner">
-					<div class="left"></div>
-					<div class="center sliding">
-						<img src="img/logo.png" width="150px">
-					</div>
-					<div class="right"></div>
-					<!-- Sub navbar -->
-					<div class="subnavbar">
-						<div class="buttons-row">
-							<a href="#tab4" class="button tab-link">Inicio</a>
-							<a href="#tab1" class="button tab-link">Tips</a>
-							<a href="#tab2" class="button tab-link">Empresa</a>
-							<a href="#tab3" class="button tab-link">Contactos</a>
-						</div>
+				<div class="right"></div>
+				<!-- Sub navbar -->
+				<div class="subnavbar">
+					<div class="buttons-row">
+						<a href="#tab4" class="button tab-link">Inicio</a>
+						<a href="#tab1" class="button tab-link">Tips</a>
+						<a href="#tab2" class="button tab-link">Empresa</a>
+						<a href="#tab3" class="button tab-link">Contactos</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="lib/framework7/js/framework7.js"></script>
-	<script type="text/javascript" src="lib/jquery/jquery.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-	<script type="text/javascript" src="js/login.js"></script>
-	<script type="text/javascript" src="js/home.js"></script>
-	<script type="text/javascript" src="js/register.prospect.js"></script>
-	<script type="text/javascript" src="js/forget.password.js"></script>
-  </body>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="lib/framework7/js/framework7.js"></script>
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
+<script type="text/javascript" src="js/register.prospect.js"></script>
+<script type="text/javascript" src="js/forget.password.js"></script>
+</body>
 </html>
