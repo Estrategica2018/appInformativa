@@ -36,7 +36,6 @@ $('#btnIngresar').on('click', function () {
 	if ($('#txtUsuario').val() != '' && $('#txtContrasena').val() != '') {
 		myApp.alert('response.message', 'Estrategica');
 		try {
-
 			$.post('https://www.estrategicacomunicaciones.com/mobile/appInformativa/consultar.usuario.php', {
 				'correo' : $('#txtUsuario').val(),
 				'contrasena' : $('#txtContrasena').val(),

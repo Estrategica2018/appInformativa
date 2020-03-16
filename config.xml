@@ -4,7 +4,7 @@
     <description>
         Referidos
     </description>
-    <author email="operaciones@estrategicaco.com" href="http://estrategicacomunicaciones.com">
+    <author email="operaciones@estrategicaco.com" href="https://estrategicacomunicaciones.com">
         Estrategica Comunicaciones
     </author>
     <icon src="www/res/icon/ios/Icon-Store.png" width="1024" height="1024" />
@@ -129,6 +129,10 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <allow-intent href="market:*" />
+        <access origin="*" />
+        <allow-intent href="*" />
+        <allow-navigation href="*" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
