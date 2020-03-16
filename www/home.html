@@ -35,488 +35,136 @@
 </div>
 <!-- Views, and they are tabs-->
 <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
-<div class="views tabs toolbar-through">
+<div id ="loginForm" class="views tabs toolbar-through ">
 	<!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
-	<div id="view-5" class="view tab">
-		<!-- We can make with view with navigation, let's add Top Navbar-->
-		<div class="navbar">
-			<div class="navbar-inner">
-				<div class="center sliding">
-					<img src="img/logo.png" width="150px">
-				</div>
-			</div>
-		</div>
-		<div class="pages navbar-through">
-			<div data-page="referidos" class="page">
-				<div class="page-content">
-					<div class="content-block">
-						<img src="img/tituloReferidos.png" style="width:75%; margin-left: auto; margin-right: auto; display: block;">
-						<div class="content-block">
-							<video style="width:100%; height:100%; border:solid;" controls>
-								<source src="http://www.estrategicacomunicaciones.com/mobile/vid/Referidos.mp4" type="video/mp4">
-							</video>
-						</div>
-					</div>
-					<div class="content-block">
-						<a href="terms.conditions.html" class="button button-big button-fill">Términos y Condiciones</a>
-					</div>
-				</div>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="center sliding">
+				<img src="img/logo.png" width="150px">
 			</div>
 		</div>
 	</div>
-	<div id="view-1" class="view view-main tab active">
-		<div class="navbar">
-			<div class="navbar-inner">
-				<div class="center sliding">
-					<img src="img/logo.png" width="150px">
-				</div>
-			</div>
-		</div>
-		<!-- Pages-->
-		<div class="pages navbar-through">
-			<!-- Page, data-page contains page name-->
-			<div data-page="portafolio" class="page">
-				<!-- Scrollable page content-->
-				<div class="page-content">
-					<div data-pagination=".swiper-pagination-h" class="swiper-container swiper-home swiper-init">
-						<div class="swiper-pagination swiper-pagination-h"></div>
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="content-block" style="text-align:center;">
-									<p>Desarrollamos soluciones de comunicación, creamos y producimos contenido y productos multi medio/dispositivo</p>
-									<img src="img/home.png" style="width:85%; margin-top:15%;">
+	<div class="pages navbar-through">
+		<div data-page="usuario" class="page">
+			<div class="page-content">
+				<div class="divLogin list-block">
+					<div class="login-screen-title">Iniciar sesi&oacute;n</div>
+					<!-- Login form -->
+					<form>
+						<div class="row content-block">
+							<input  type="hidden" name="company" id="company"  value="1">
+							<div class="item-inner">
+								<div class="item-input">
+									<input type="email" name="username" placeholder="Usuario" id="txtUsuario">
 								</div>
 							</div>
-							<div class="swiper-slide">
-								<div class="swiper-container swiper-home swiper-init" data-pagination=".swiper-pagination-v1" data-direction="vertical">
-									<div class="swiper-pagination swiper-pagination-v1"></div>
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/audiovisual.png" width="350px">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/audiovisual_videotv.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/audiovisual_editorial.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/audiovisual_impresion.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/audiovisual_distribucion.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/audiovisual_proyectos.png" width="100%">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="swiper-container swiper-home swiper-init" data-pagination=".swiper-pagination-v2" data-direction="vertical">
-									<div class="swiper-pagination swiper-pagination-v2"></div>
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/desarrollo.png" width="350px">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/desarrollo_ebooks.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/desarrollo_software.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/desarrollo_movil.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/desarrollo_educativo.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/desarrollo_web.png" width="100%">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="swiper-container swiper-home swiper-init" data-pagination=".swiper-pagination-v3" data-direction="vertical">
-									<div class="swiper-pagination swiper-pagination-v3"></div>
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/educacion.png" width="350px">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/educacion_plataforma_educativa.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/educacion_contenido.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/educacion_modelos.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/educacion_material.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="content-block">
-												<img src="img/educacion_plataforma.png" width="100%">
-											</div>
-										</div>
-									</div>
+							<br><br>
+							<div class="item-inner">
+								<div class="item-input">
+									<input type="password" name="password" placeholder="Contrase&ntilde;a" id="txtContrasena">
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Second view (for second wrap)-->
-	<div id="view-2" class="view tab">
-		<!-- We can make with view with navigation, let's add Top Navbar-->
-		<div class="navbar">
-			<div class="navbar-inner">
-				<div class="center sliding">
-					<img src="img/logo.png" width="150px">
-				</div>
-			</div>
-		</div>
-		<div class="pages navbar-through">
-			<div data-page="proyectos" class="page">
-				<div class="page-content">
-					<div class="content-block">
-						<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-						</iframe>
-
-						<img src="img/tituloReelAudiovisual.png" width="100%">
-						<video style="width:100%; height:100%; border:solid;" controls>
-							<source src="http://www.estrategicacomunicaciones.com/mobile/vid/Referidos.mp4" type="video/mp4">
-						</video>
-						<img src="img/tituloReelDesarrollo.png" width="100%">
-						<video style="width:100%; height:100%; border:solid;" controls>
-							<source src="https://www.youtube.com/watch?v=I_izvAbhExY" type="">
-						</video>
-						<img src="img/tituloReelEducacion.png" width="100%">
-						<video style="width:100%; height:100%; border:solid;" controls>
-							<source src="https://www.youtube.com/watch?v=I_izvAbhExY" type="">
-						</video>
-					</div>
-					<!--<div class="list-block">
-                      <ul>
-                        <li><a href="audiovisual.html" class="item-link">
-                                <div class="item-content">
-                                  <div class="item-inner">
-                                    <div class="item-title">Audiovisual</div>
-                                  </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="desarrollo.html" class="item-link">
-                                <div class="item-content">
-                                  <div class="item-inner">
-                                    <div class="item-title">Desarrollo</div>
-                                  </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="educacion.html" class="item-link">
-                                <div class="item-content">
-                                  <div class="item-inner">
-                                    <div class="item-title">Educaci&oacute;n</div>
-                                  </div>
-                                </div>
-                            </a>
-                        </li>
-                      </ul>
-                    </div>-->
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="view-3" class="view tab">
-		<!-- We can make with view with navigation, let's add Top Navbar-->
-		<div class="navbar">
-			<div class="navbar-inner">
-				<div class="center sliding">
-					<img src="img/logo.png" width="150px">
-				</div>
-			</div>
-		</div>
-		<div class="pages navbar-through">
-			<div data-page="prospectos" class="page">
-				<div class="page-content">
-					<div class="content-block">
-						<img src="img/tituloProspectos.png" style="width:75%; margin-left: auto; margin-right: auto; display: block;">
-						<div class="list-block">
-							<ul id="ulProspectos"></ul>
-						</div>
-					</div>
-					<div class="content-block">
-						<a href="register.prospect.html?nuevo=true" class="button button-big button-fill">Nuevo prospecto</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="view-4" class="view tab">
-		<div class="navbar">
-			<div class="navbar-inner">
-				<div class="center sliding">
-					<img src="img/logo.png" width="150px">
-				</div>
-			</div>
-		</div>
-		<div class="pages navbar-through">
-			<div data-page="usuario" class="page">
-				<div class="page-content">
-					<div class="divLogin list-block">
-						<div class="login-screen-title">Iniciar Sesi&oacute;n</div>
-						<!-- Login form -->
-						<form>
-							<div class="list-block">
-								<ul>
-									<li class="item-content">
-										<div class="item-inner">
-											<div class="item-title label">Usuario</div>
-											<div class="item-input">
-												<input type="email" name="username" placeholder="Usuario" id="txtUsuario">
-											</div>
-										</div>
-									</li>
-									<li class="item-content">
-										<div class="item-inner">
-											<div class="item-title label">Contrase&ntilde;a</div>
-											<div class="item-input">
-												<input type="password" name="password" placeholder="Contrase&ntilde;a" id="txtContrasena">
-											</div>
-										</div>
-									</li>
-								</ul>
+						<div class="row content-block">
+							<div class="col-100">
+								<p><a href="#" class="button button-big button-fill" id="btnIngresar">Ingresar</a></p>
 							</div>
-							<div class="row content-block">
-								<div class="col-50">
-									<p><a href="#" class="button button-big button-fill" id="btnIngresar">Ingresar</a></p>
-								</div>
-								<div class="col-50">
-									<p><a href="forget.password.html" class="button button-big">Olvidaste contrase&ntilde;a</a></p>
-								</div>
-								<div class="col-100">
-									<p><a href="#" class="button button-big button-fill" id="btnRegistrar">Registrar</a></p>
-								</div>
-							</div>
-							<!--<div class="row content-block">
-                              <div class="col-100">
-                                  <p><a href="#" class="button button-big button-fill color-gray" id="btnCancelarLogin">Cancelar</a></p>
-                              </div>
-                            </div>-->
-						</form>
-					</div>
-					<div class="divRegister list-block" style="display:none;">
-						<ul>
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">Nombres</div>
-										<div class="item-input">
-											<input type="text" placeholder="Nombres " id="txtNombre" disabled>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">Apellidos</div>
-										<div class="item-input">
-											<input type="text" placeholder="Apellidos " id="txtApellido" disabled>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">Identificaci&oacute;n</div>
-										<div class="item-input">
-											<input type="text" placeholder="N&uacute;mero de Identificaci&oacute;n" id="txtIdentificacion" disabled>
-											<input type="hidden"id="txtIdPerfil" value="2" disabled>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">E-mail</div>
-										<div class="item-input">
-											<input type="email" placeholder="E-mail" id="txtEmail" disabled>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">Contrase&ntilde;a</div>
-										<div class="item-input">
-											<input type="password" placeholder="Contrase&ntilde;a" id="txtPassword" disabled>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">Contrase&ntilde;a</div>
-										<div class="item-input">
-											<input type="password" placeholder="Confirmar Contrase&ntilde;a" id="txtPassword2" disabled>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">Tel&eacute;fono</div>
-										<div class="item-input">
-											<input type="tel" placeholder="Tel&eacute;fono" id="txtTelefono" disabled>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">G&eacute;nero</div>
-										<div class="item-input">
-											<select id="cmbGenero" disabled>
-												<option value="M">Masculino</option>
-												<option value="F">Femenino</option>
-											</select>
-										</div>
-									</div>
-								</div>
-							</li>
-							<!--<li>
-                            <div class="item-content">
-                              <div class="item-media"><i class="icon icon-form-calendar"></i></div>
-                              <div class="item-inner">
-                                <div class="item-title label">Birth date</div>
-                                <div class="item-input">
-                                  <input type="date" placeholder="Birth day" value="2014-04-30">
-                                </div>
-                              </div>
-                            </div>
-                          </li>-->
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">Modificar</div>
-										<div class="item-input">
-											<label class="label-switch">
-												<input type="checkbox" id="chkModificar">
-												<div class="checkbox"></div>
-											</label>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-						<div class="content-block" id="divGuardarUsuario" style="display:none;">
-							<a href="#" class="button button-big button-fill color-green" id="btnGuardarUsuario">Guardar</a>
-						</div>
-						<div class="content-block">
-							<a href="#" class="button button-big button-fill" id="btnSalir">Cerrar Sesi&oacute;n</a>
-						</div>
-					</div>
-					<div class="swiper-container swiper-1">
-						<div class="swiper-pagination swiper-pagination-1" style="bottom:auto;"></div>
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<a href="#" id="lnkEnterate">
-									<img src="img/banner1.png" class="swiper-lazy">
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="#" id="lnkPortafolio">
-									<img src="img/banner2.png" class="swiper-lazy">
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="#" id="lnkProyectos">
-									<img src="img/banner3.png" class="swiper-lazy">
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="#" id="lnkTerCond">
-									<img src="img/banner4.png" class="swiper-lazy">
-								</a>
+							<br>
+							<div class="col-100">
+								<p><a href="forget.password.html" class="button button-big">Olvidaste contrase&ntilde;a</a></p>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- Bottom Tabbar-->
-	<div class="toolbar tabbar tabbar-labels" id="tbMenu">
-		<div class="toolbar-inner">
-			<a href="#view-5" class="tab-link">
-				<i class="material-icons">public</i>
-				<span class="tabbar-label">Referidos</span>
-			</a>
-			<a href="#view-1" class="tab-link" id="tb1">
-				<i class="material-icons">business_center</i>
-				<span class="tabbar-label">Portafolio</span>
-			</a>
-			<a href="#view-2" class="tab-link" id="tb2">
-				<i class="material-icons">extension</i>
-				<span class="tabbar-label">Proyectos</span>
-			</a>
-			<a href="#view-3" class="tab-link" id="tb3" style="display:none;">
-				<i class="material-icons">group</i>
-				<span class="tabbar-label">Prospectos</span>
-			</a>
-			<a href="#view-4" class="tab-link" id="tb4">
-				<i class="material-icons">account_box</i>
-				<span class="tabbar-label">Usuario</span>
-			</a>
 		</div>
 	</div>
 </div>
+<div id="contentForm" class="views" >
+	<div class="view view-main">
+		<div class="pages navbar-through">
+			<!-- Pag has additional "with-subnavbar" class -->
+			<div data-page="home" class="page with-subnavbar">
+				<div class="page-content hide-bars-on-scroll">
+					<div class="tabs">
+						<div id="tab1" class="tab active">
+
+							<div class="list-block cards-list">
+								<ul id="listTips">
+								</ul>
+							</div>
+
+						</div>
+						<div id="tab2" class="tab">
+							<div class="content-block">
+								<p>Donec iaculis ...</p>
+								<p>Curabitur egestas, mi ...</p>
+								<p>Donec iaculis posuere ...</p>
+								<p>Donec iaculis ...</p>
+								<p>Curabitur egestas, mi ...</p>
+								<p>Donec iaculis posuere ...</p>
+								<p>Donec iaculis ...</p>
+								<p>Curabitur egestas, mi ...</p>
+								<p>Donec iaculis posuere ...</p>v
+								<p>Donec iaculis ...</p>
+								<p>Curabitur egestas, mi ...</p>
+								<p>Donec iaculis posuere ...</p>
+
+
+							</div>
+						</div>
+						<div id="tab3" class="tab">
+							<div class="content-block">
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+								<p>Etiam non interdum erat...</p>
+								<p>Duis ac semper risus. Suspendisse...</p>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="left"></div>
+				<div class="center sliding">
+					<img src="img/logo.png" width="150px">
+				</div>
+				<div class="right"></div>
+				<!-- Sub navbar -->
+				<div class="subnavbar">
+					<div class="buttons-row">
+						<a href="#tab4" class="button tab-link">Inicio</a>
+						<a href="#tab1" class="button tab-link">Tips</a>
+						<a href="#tab2" class="button tab-link">Empresa</a>
+						<a href="#tab3" class="button tab-link">Contactos</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="lib/framework7/js/framework7.js"></script>
 <script type="text/javascript" src="lib/jquery/jquery.js"></script>
