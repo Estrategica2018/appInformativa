@@ -34,18 +34,21 @@ $('#tb4').on('click',function(){
 
 $('#btnIngresar').on('click', function () {
 	if ($('#txtUsuario').val() != '' && $('#txtContrasena').val() != '') {
-		$.post('https://www.estrategicacomunicaciones.com/mobile/appInformativa/consultar.usuario.php', {
-			'correo' : $('#txtUsuario').val(),
-			'contrasena' : $('#txtContrasena').val(),
-			'empresa': $('#company').val(),
-		}, function(response) {
-			if (response.state == 'true') {
-				console.log(response);
-				console.log(response.result);
-				$content = "";
-				response.contenidoVideo.forEach(function(element, i) {
-					console.log('Element', i, 'is', element);
-					$content = $content+`<li class="card">
+		myApp.alert('response.message', 'Estrategica');
+		try {
+
+			$.post('https://www.estrategicacomunicaciones.com/mobile/appInformativa/consultar.usuario.php', {
+				'correo' : $('#txtUsuario').val(),
+				'contrasena' : $('#txtContrasena').val(),
+				'empresa': $('#company').val(),
+			}, function(response) {
+				if (response.state == 'true') {
+					console.log(response);
+					console.log(response.result);
+					$content = "";
+					response.contenidoVideo.forEach(function(element, i) {
+						console.log('Element', i, 'is', element);
+						$content = $content+`<li class="card">
 								<div class="card-header">Card Header</div>
 									<div class="card-content">
 										<div class="card-content-inner">
@@ -54,19 +57,26 @@ $('#btnIngresar').on('click', function () {
 										</div>
 									</div>
 							</li>`
-				});
+					});
 
-				$('#listTips').append($content);
-				$("#loginForm").attr("hidden",true);
-				$('#contentForm').attr('hidden',false);
-				setCookie('id_usuario', response.result[0].id_usuario);
-				console.log(getCookie('id_usuario'),'alksdjasld');
-				//cargarProspectos(getCookie('id_usuario'));
-			} else {
-				//myApp.alert(response.message, 'Estrategica');
-				myApp.alert(response.message, 'Estrategica');
-			}
-		}, 'json');
+					$('#listTips').append($content);
+					$("#loginForm").attr("hidden",true);
+					$('#contentForm').attr('hidden',false);
+					setCookie('id_usuario', response.result[0].id_usuario);
+					console.log(getCookie('id_usuario'),'alksdjasld');
+					//cargarProspectos(getCookie('id_usuario'));
+				} else {
+					//myApp.alert(response.message, 'Estrategica');
+					myApp.alert(response.message, 'Estrategica');
+				}
+			}, 'json');
+
+		} catch(err) {
+
+			myApp.alert(err, 'Estrategica');
+
+		}
+
 
 	} else {
 		myApp.alert('Ingrese su usuario y contraseña', 'Estrategica');
