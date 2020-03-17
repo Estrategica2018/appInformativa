@@ -36,15 +36,7 @@ $('#btnIngresar').on('click', function () {
 	if ($('#txtUsuario').val() != '' && $('#txtContrasena').val() != '') {
 
 		if( $('#txtUsuario').val() === "diegodigital@gmail.com" && $('#txtContrasena').val() === "diegodigital"){
-			$('#listTips').append(`<li class="card">
-						<div class="card-header">Video Informativo</div>
-						<div class="card-content">
-						<div class="card-content-inner">
-						<iframe width="auto" height="auto" src="https://estrategicacomunicaciones.com/mobile/vid/CovidPiloto.mp4" type="video/mp4">
-						</iframe>
-						</div>
-						</div>
-						</li>`);
+			//$('#listTips').append();
 			$("#loginForm").attr("hidden",true);
 			$('#contentForm').attr('hidden',false);
 			setCookie('id_usuario', 1);
